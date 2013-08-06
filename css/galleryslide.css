@@ -1,0 +1,114 @@
+.ui-gallerySlide{position:relative; position: relative;}
+/*纵向滚动*/
+.gs-vertical .content-wraper{position:absolute; background-color: #f0f0f0; overflow: hidden;}
+.gs-vertical .gsContent{position:absolute; left: 0; top: 0;}
+.gs-vertical .img-border{position: absolute; left:0; top:0; border: 4px solid #5682C2; z-index:5;}
+.gs-vertical .gsContent .gsImageWraper{position: relative; display: inline-block;}
+.gs-vertical .gsContent .gsImage{cursor: pointer; margin: 4px 0 0 4px;}
+/*prev,next CSS可自定义*/
+.gs-vertical .prev{position: absolute; left:0; top:0; width: 100%; height: 15px; margin-bottom: 5px; z-index:3; background:#5682C2; cursor: pointer;}
+.gs-vertical .next{position: absolute; left:0; bottom:0; width: 100%; height: 15px; margin-top: 5px; z-index:4; background:#5682C2; cursor: pointer;}
+.gs-vertical .prev-arrow, .gs-vertical .next-arrow{position: absolute; top:50%; left:50%; margin-left: -4px; margin-top:-2px; width:8px; height:4px; z-index:6; background: url(../images/photogallery.png) no-repeat}
+.gs-vertical .prev-arrow{background-position: -51px -38px;}
+.gs-vertical .next-arrow{background-position: -61px -38px;}
+/*横向滚动*/
+.gs-horizontal .content-wraper{position:absolute; overflow: hidden;}
+.gs-horizontal .gsContent{position:absolute; left: 0; top: 0;}
+.gs-horizontal .img-border{position: absolute; left:0; top:0; border: 4px solid #5682C2; z-index:5;}
+.gs-horizontal .gsContent .gsImageWraper{position: relative; display: inline-block;}
+.gs-horizontal .gsContent .gsImage{cursor: pointer; margin: 4px 0 0 4px;}
+/*prev,next CSS可自定义*/
+.gs-horizontal .prev{position: absolute; left:0; top:0; width: 45px; height: 100%; margin-right: 5px; z-index:3; cursor: pointer;}
+.gs-horizontal .next{position: absolute; right:0; top:0; width: 45px; height: 100%; margin-left: 5px; z-index:4; cursor: pointer;}
+.gs-horizontal .prev-arrow, .gs-horizontal .next-arrow{position: absolute; top:50%; left:50%; margin-left: -8px; margin-top:-22px; width:16px; height:44px; z-index:6; background: url(../images/photogallery.png) no-repeat}
+.gs-horizontal .prev-arrow{background-position: 0px 0px;}
+.gs-horizontal .next-arrow{background-position: -16px 0px;}
+
+
+/*图片集*/
+.ui-photoGallery{position:relative; border: 1px solid #ccc; width: 100%; height: 100%;}
+.ui-photoGallery .left-tool{float: left; width: 40px; height: 100%; background-color: #5682C2;}
+.ui-photoGallery .center-content{position:relative; margin-left: 40px; margin-right: 120px; height: 100%; background-color: #000; overflow: hidden; -webkit-perspective: 1000px; -moz-perspective: 1000px; -ms-perspective: 1000px; perspective: 1000px;}
+.ui-photoGallery .pgImage{position: absolute; z-index: 0; -webkit-transition:All 1s ease-in-out; -moz-transition:All 1s ease-in-out; -ms-transition:All 1s ease-in-out; transition:All 1s ease-in-out;}
+.ui-photoGallery .image-rotate{z-index: 0; -webkit-backface-visibility: hidden; -webkit-transition:All 1s ease-in-out; -moz-transition:All 1s ease-in-out; -ms-transition:All 1s ease-in-out; transition:All 1s ease-in-out; -webkit-transform: rotateY(-180deg ); -moz-transform: rotateY(-180deg ); -ms-transform: rotateY(-180deg ); transform: rotateY(-180deg );}
+.ui-photoGallery .right-half{position: absolute; z-index: 5; width: 50%; height: 100%; right: 0; top:0; overflow: hidden; -webkit-transition:All 1s ease-in-out; -moz-transition:All 1s ease-in-out; -ms-transition:All 1s ease-in-out; transform:All 1s ease-in-out;}
+.ui-photoGallery .right-half img{margin-left: -100%;}
+.ui-photoGallery .left-half{position: absolute; z-index: 3; width: 50%; height: 100%; left: 0; top:0; overflow: hidden; -webkit-transition:transform 1s; -moz-transition:transform 1s; -ms-transition:transform 1s; transition:transform 1s;}
+.ui-photoGallery .image-info{position: absolute; width: 90%; height: 66px; left:5%; bottom: 15px; background-color: #000; z-index:10;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /* ie8  */
+    filter:alpha(opacity=60);    /* ie5-7  */
+    opacity: 0.6;    /* css standard, currently it works in most modern browsers*/
+}
+.ui-photoGallery .image-info span{vertical-align: middle;}
+.ui-photoGallery .left-info{display: inline-block; color:#fff; width: 70%;} 
+.ui-photoGallery .left-info p{margin: 0; padding: 5px 10px;}
+.ui-photoGallery .photo-title{font-size: 16px; font-weight: bolder; width: 100%; overflow: hidden; text-overflow: ellipsis;}
+.ui-photoGallery .photo-description{font-size: 14px; width: 100%; overflow: hidden; text-overflow: ellipsis;}
+.ui-photoGallery .right-info{display: inline-block; color:#fff; width: 30%; text-align: right;}
+.ui-photoGallery .right-info .page{font-size: 22px; font-weight: bold;}
+.ui-photoGallery .right-info .page b{color: #ff0000;}
+
+.ui-photoGallery .left-arrow, .ui-photoGallery .right-arrow{display:inline-block; background: url(../images/photogallery.png); width: 16px; height: 45px; margin:10px 5px;}
+.ui-photoGallery .left-arrow{background-position: 0 0; cursor: pointer;}
+.ui-photoGallery .right-arrow{background-position: -16px 0; cursor: pointer;}
+
+.ui-photoGallery .right-slide{float: right; width: 120px; height: 100%; background-color: #f0f0f0;}
+
+.ui-photoGallery .icon{background: url(../images/photogallery.png) no-repeat; display: block; width: 24px; height: 24px; margin: 8px; cursor: pointer;}
+.ui-photoGallery .full{background-position: -0px -106px;}
+.ui-photoGallery .star{background-position: -24px -106px;}
+.ui-photoGallery .cloud{background-position: -48px -104px;}
+.ui-photoGallery .share{background-position: -74px -106px;}
+.ui-photoGallery .icon:hover{
+    transition:All 0.4s ease-in;
+    -webkit-transition:All 0.4s ease-in;
+    -moz-transition:All 0.4s ease-in;
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+}
+
+/*视频集*/
+.ui-videoGallery{position:relative; border: 1px solid #ccc; width: 100%; height: 100%;}
+.ui-videoGallery .left-tool{float: left; width: 40px; height: 100%; background-color: #5682C2;}
+.ui-videoGallery .center-content{position:relative; margin-left: 40px; margin-right: 120px; height: 100%; background-color: #000; overflow: hidden; -webkit-perspective: 1000px; -moz-perspective: 1000px; -ms-perspective: 1000px; perspective: 1000px;}
+
+.ui-videoGallery .left-info{display: inline-block; color:#fff; width: 70%;} 
+.ui-videoGallery .left-info p{margin: 0; padding: 5px 10px;}
+.ui-videoGallery .photo-title{font-size: 16px; font-weight: bolder; width: 100%; overflow: hidden; text-overflow: ellipsis;}
+.ui-videoGallery .photo-description{font-size: 14px; width: 100%; overflow: hidden; text-overflow: ellipsis;}
+.ui-videoGallery .right-info{display: inline-block; color:#fff; width: 30%; text-align: right;}
+.ui-videoGallery .right-info .page{font-size: 22px; font-weight: bold;}
+.ui-videoGallery .right-info .page b{color: #ff0000;}
+
+.ui-videoGallery .right-slide{float: right; width: 120px; height: 100%; background-color: #f0f0f0;}
+
+.ui-videoGallery .icon{background: url(../images/photogallery.png) no-repeat; display: block; width: 24px; height: 24px; margin: 8px; cursor: pointer;}
+.ui-videoGallery .full{background-position: -0px -106px;}
+.ui-videoGallery .star{background-position: -24px -106px;}
+.ui-videoGallery .cloud{background-position: -48px -104px;}
+.ui-videoGallery .share{background-position: -74px -106px;}
+.ui-videoGallery .icon:hover{
+    transition:All 0.4s ease-in;
+    -webkit-transition:All 0.4s ease-in;
+    -moz-transition:All 0.4s ease-in;
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+}
+.ui-videoGallery .play-icon {position: absolute; left:50%; top:50%; margin-top: -18px; margin-left: -18px; z-index: 20; cursor: pointer;}
+
+/*新闻集*/
+.ui-newsGallery{position:relative; width: 100%; height: 100%; }
+.ui-newsGallery .gs-horizontal .img-border{position: absolute; left:0; top:0; z-index:5; border:4px transparent solid; outline: 4px #fff solid;}
+.ui-newsGallery .album-title{position:absolute; left:4px; right:4px; bottom: 4px; height: 40px; background-color: #000; color:#fff; overflow: hidden; cursor: pointer;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* ie8  */
+    filter:alpha(opacity=70);    /* ie5-7  */
+    opacity: 0.7;    /* css standard, currently it works in most modern browsers*/
+}
+.ui-newsGallery .album-corner{position:absolute; left:4px; top:4px; width: 0px; height: 0px; border-style: solid; border-width: 40px 40px 0 0; border-color: #f97f76 transparent transparent transparent;}
+.ui-newsGallery .album-count{position:absolute; left:4px; top:4px; color: #fff; font-size: 14px; font-weight: bold; width: 30px; height: 40px; cursor: pointer; text-align: center;}

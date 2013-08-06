@@ -1,0 +1,77 @@
+.gallery{position:relative; text-align:left; min-width:990px; overflow: hidden; height:100%; min-height: 500px;}
+
+.left-page{position: fixed; top:0; left:0; width: 150px; height: 100%; background-color: #fff; text-align: center;}
+.left-page .page-holder{ position: relative; width: 150px; height: 100%; min-height: 400px; background-color: #fff; text-align: center; transition:all 1s ease;}
+.left-page .page-holder .pageContainer{z-index: 2}
+.left-page .page{display: block; font-size: 22px; height: 30px;}
+.left-page .page .pageNo{display: inline-block; width: 60px;}
+.left-page .page .pageNo:hover{color:#0f0; border-radius: 5px;}
+.left-page .pageSelected .pageNo{background-color: #ff0000; border-radius: 5px;}
+#imgPreview{position: fixed; left: 0; top: 0; display: none; z-index: 3; }
+#imgPreview .triangle{position: absolute; left: 0; top: 50%; margin-top: -10px; width: 0px; height: 0px; border-style: solid;
+border-width: 10px 20px 10px 0; border-color: transparent #c0c0c0 transparent transparent;}
+#imgPreview .triangle2{position: absolute; left: 1px; top: 50%; margin-top: -10px; width: 0px; height: 0px; border-style: solid;
+border-width: 10px 20px 10px 0; border-color: transparent #fff transparent transparent;}
+#imgPreview .imagePanel{margin-left: 20px; width: 140px; height:89px; padding: 4px 0 4px 6px; border: 1px solid #c0c0c0; background-color: #fff;}
+
+.center-page{height: 100%; margin-left: 150px; margin-right: 290px; background-color: #f0f0f0; }
+.center-page #imageViewArea{margin: 0 10px; height: 100%; overflow: auto;}
+
+.right-page{position: fixed; right:0; top:0; width:320px; height: 100%; background-color: #fff; font-size: 16px; z-index: 2;}
+.right-page .photo-nav{margin-left: 17px; color:#ababab;}
+.right-page .photo-nav a{margin-left: 3px; margin-right: 3px; color:#ababab;}
+.right-page .photo-nav .current{color:#FF7F58; font-weight: bolder;}
+.right-page .album-title{margin-left: 20px; color:#212121;}
+.right-page .album-desc{margin-left: 20px; color:#212121; height: 80px; overflow: auto;}
+.right-page .photo-time{margin-left: 20px; color:#ababab;}
+.right-page .photo-desc{margin-left: 20px; color:#252525; height: 80px; overflow: auto;}
+.right-page .photo-tool{margin-left: 20px;}
+.right-page .photo-comment{margin-left: 20px;}
+.right-page .photo-comment a{color:#FA8E87; font-weight: bold; font-size: 18px;}
+.right-page .tool-bar{padding-left: 18px; width: 52px; height: 76px;}
+
+.gallery-slide{position: fixed; height: 155px; width: 100%; left:0; bottom: -129px; z-index: 3}
+.gallery-slide .close-wraper{position: absolute; background-color: #F97E76; border-radius: 0 0 0 30px; right: 0; top:25px; width: 30px; height:30px; cursor: pointer; z-index: 5}
+.gallery-slide .close-wraper .close{background: url(../images/photogallery.png) -33px 0 no-repeat; width: 20px; height:20px; cursor: pointer; margin-left: 8px; margin-top: 2px; z-index: 5}
+.gallery-slide .tab-area{height:25px;}
+.gallery-slide .tab-area span{text-align: middle; display: inline-block;}
+.gallery-slide .tab-area .tab-wraper{height: 25px; width: 80px; position: relative; overflow: hidden;}
+.gallery-slide .tab-area .tab-wraper{height: 25px; width: 80px; position: relative; overflow: hidden;}
+.gallery-slide .tab-area .tab-wraper .tab{background-color: #C9D4DC; height: 25px; line-height: 25px; width:55px; text-align: center;}
+.gallery-slide .tab-area .tab-wraper .triangle{position:absolute; right:0; width: 0; height: 0; border-right: solid 25px transparent; border-bottom: solid 25px #C9D4DC;}
+.gallery-slide .tab-area .tab-on .tab{background-color: #F97E76;}
+.gallery-slide .tab-area .tab-on .triangle{border-bottom: solid 25px #F97E76;}
+.gallery-slide .content-wraper{height: 130px; width: 100%; position: relative;}
+.gallery-slide .content-wraper .content-bg{position: absolute; height: 100%; width: 100%; background-color: #000;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /* ie8  */
+    filter:alpha(opacity=60);    /* ie5-7  */
+    opacity: 0.6;    /* css standard, currently it works in most modern browsers*/
+}
+.gallery-slide .content-wraper .hourGallery, .gallery-slide .content-wraper .oldGallery{position: absolute; top:10%; width: 100%; height: 80%;}
+
+.gallery-slide .tab-wraper .tcolor2{background-color: #C9D4DC;}
+.gallery-slide .tab-wraper .bcolor2{border-bottom: solid 25px #C9D4DC; }
+
+.icon{background: url(../images/photogallery.png) no-repeat; display: inline-block; width: 24px; height: 24px; vertical-align: middle; transition: all 1s ease-In-Out;}
+.full{background-position: -0px -83px;}
+.star{background-position: -24px -83px;}
+.cloud{background-position: -49px -83px;}
+.share{background-position: -74px -83px;}
+.comment{background-position: -98px -81px; width: 26px; height: 26px;}
+
+
+.upArrow, .downArrow{background: url(../images/photogallery.png) no-repeat; display: inline-block; width: 24px; height: 24px; vertical-align: middle;}
+.upArrow{background-position: -0 -45px; width:52px; height: 38px;}
+.downArrow{background-position: -52px -45px; width:52px; height: 38px;}
+
+.icon:hover {
+    -webkit-transform: rotate(360deg);
+}
+
+hr{
+	border:none;
+	border-top:1px #d5d5d5 solid;
+	height:0;
+}
+
+

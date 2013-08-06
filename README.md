@@ -1,4 +1,7 @@
-albumSlide
+#albumSlide
 ==========
+图片集
 
-albumSlide
+翻书效果的相册实现
+
+![](1.png)
